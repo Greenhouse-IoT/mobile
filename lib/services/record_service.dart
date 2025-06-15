@@ -99,15 +99,16 @@ class RecordService {
     phase = 'bunker';
   } else if (phase == 'Tunnel') {
     phase = 'tunnel';
-  } else if (phase == 'Incubation') {
-    phase = 'incubation';
-  } else if (phase == 'Casing') {
-    phase = 'casing';
-  } else if (phase == 'Induction') {
-    phase = 'induction';
-  } else if (phase == 'Harvest') {
-    phase = 'harvest';
   }
+  // } else if (phase == 'Incubation') {
+  //   phase = 'incubation';
+  // } else if (phase == 'Casing') {
+  //   phase = 'casing';
+  // } else if (phase == 'Induction') {
+  //   phase = 'induction';
+  // } else if (phase == 'Harvest') {
+  //   phase = 'harvest';
+  // }
   final record = Record(author: author, phase: phase, payload: payload, cropId: cropId);
   final response = await http.post(
     Uri.parse('${baseUrl}records'),

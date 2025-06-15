@@ -43,14 +43,14 @@ class _AddRecordDialogState extends State<AddRecordDialog> {
         return ["T1", "T2", "T3", "Frequency", "Comment"];
       case 'Tunnel':
         return ["T1", "T2", "T3", "Frequency", "RT", "Fresh Air", "Recirculation", "Comment"];
-      case 'Incubation':
-        return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
-      case 'Casing':
-        return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
-      case 'Induction':
-        return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
-      case 'Harvest':
-        return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
+      // case 'Incubation':
+      //   return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
+      // case 'Casing':
+      //   return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
+      // case 'Induction':
+      //   return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
+      // case 'Harvest':
+      //   return ["Grow Room", "Air Temperature", "Compost Temperature", "Carbon Dioxide", "Air Humidity", "Setting", "Comment"];
       default:
         return [];
     }
