@@ -55,7 +55,8 @@ class _RecordsScreenState extends State<RecordsScreen> {
   }
 
   void showAddRecordDialog() {
-    showDialog(
+    if(widget.cropPhase == 'Formula' || widget.cropPhase == 'Preparation Area' || widget.cropPhase == 'Bunker' || widget.cropPhase == 'Tunnel'){
+      showDialog(
       context: context,
       builder: (BuildContext context) {
         return AddRecordDialog(
@@ -69,6 +70,7 @@ class _RecordsScreenState extends State<RecordsScreen> {
         );
       },
     );
+    }
   }
 
   @override
